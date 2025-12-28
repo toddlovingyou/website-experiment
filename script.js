@@ -60,7 +60,7 @@ function runCommand(input) {
             <ul>
               <li><b>skills</b> — tools & tech</li>
               <li><b>projects</b> — what I’ve built</li>
-              <li><b>media</b> — YouTube & competitive background</li>
+              <li><b>competitive</b> — Competitive background</li>
               <li><b>resume</b>, <b>linkedin</b> — open links</li>
             </ul>
           </div>
