@@ -1,16 +1,104 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title>Playground</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>David Yu | Cybersecurity @ GMU</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 id="title">Doing whatever </h1>
+    <div class="app">
+      <!-- LEFT: Terminal -->
+      <aside class="left">
+        <div class="leftHeader">
+          <div class="dot red"></div>
+          <div class="dot yellow"></div>
+          <div class="dot green"></div>
+          <span class="title">Terminal</span>
+        </div>
 
-    <button id="btn">Click me</button>
+        <div class="terminal" id="terminal">
+          <div class="line muted">Welcome. Type <b>help</b> to explore.</div>
+          <div class="line muted">Try: about, experience, skills, projects, media, resume, linkedin</div>
+        </div>
 
-    <p id="text">Nothing happened yet.</p>
+        <form id="form" class="inputrow" autocomplete="off">
+          <span class="prompt">guest@david:~$</span>
+          <input id="cmd" type="text" placeholder="help" />
+        </form>
+      </aside>
+
+      <!-- RIGHT: Content -->
+      <main class="right">
+        <section class="card hero">
+          <div>
+            <h1 id="name">David Yu</h1>
+            <p class="subtitle" id="tagline">
+              Cybersecurity Engineering @ GMU • IT Helpdesk • Security Labs
+            </p>
+            <div class="actions">
+              <a class="btn" id="resumeBtn" href="./resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+              <a class="btn ghost" id="linkedinBtn" href="https://www.linkedin.com/in/david87/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <!-- Optional: add YouTube later by replacing the URL below -->
+              <!-- <a class="btn ghost" href="https://www.youtube.com/@YOURCHANNEL" target="_blank" rel="noreferrer">YouTube</a> -->
+            </div>
+          </div>
+
+          <div class="hint">
+            <div class="hintTitle">Quick commands</div>
+            <div class="hintRow">
+              <span class="pill">about</span>
+              <span class="pill">experience</span>
+              <span class="pill">skills</span>
+              <span class="pill">projects</span>
+              <span class="pill">media</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="card content">
+          <div class="contentTop">
+            <h2 id="panelTitle">Start here</h2>
+            <span class="muted" id="panelMeta">Type a command on the left.</span>
+          </div>
+
+          <div id="panelBody" class="panelBody">
+            <p>
+              This page updates based on what you type in the terminal.
+              Try <b>about</b> or <b>experience</b>.
+            </p>
+
+            <div class="grid2">
+              <div class="mini">
+                <div class="miniTitle">Recommended</div>
+                <ul>
+                  <li><b>about</b> — who I am</li>
+                  <li><b>experience</b> — what I do</li>
+                  <li><b>skills</b> — tools & tech</li>
+                  <li><b>resume</b> — open PDF</li>
+                </ul>
+              </div>
+
+              <div class="mini">
+                <div class="miniTitle">Try this too</div>
+                <ul>
+                  <li><b>projects</b> — what I’ve built</li>
+                  <li><b>media</b> — YouTube & competitive background</li>
+                  <li><b>linkedin</b> — open profile</li>
+                  <li><b>clear</b> — clear terminal</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <span class="muted">© <span id="year"></span> David Yu</span>
+        </footer>
+      </main>
+    </div>
 
     <script src="script.js"></script>
   </body>
 </html>
+
